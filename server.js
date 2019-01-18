@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/articles";
+var MONGODB_URI = "mongodb://itzae:raiders1@ds143604.mlab.com:43604/heroku_256pzf6f" || "mongodb://localhost/articles";
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
